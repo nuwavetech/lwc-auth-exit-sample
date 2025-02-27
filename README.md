@@ -1,1 +1,1 @@
-#### Sample
+# lws-auth-exit-sample
