@@ -275,7 +275,7 @@ static void handleFetchTknSetRequest(CTKNSRV_FUNCTION_ARGS) {
   if (rq->tkn_set_name_len <= 0 || // Default is token set 1
       strncmp(rq->tkn_set_name, "test-token-set-1", rq->tkn_set_name_len) ==
           0) {
-    rp.tkn_set_ttl = 60;
+    rp.tkn_set_ttl = 60; // Seconds for LightWave Client to retain in cache
     rp.tkn_count = 1;
 
     rp.tkn_set[0].tkn_type = lw_ae_tkn_type_header;
